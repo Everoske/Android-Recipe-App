@@ -30,10 +30,11 @@ The application can still be downloaded and used and the code is free to clone s
 - Android Manifest File: app/src/main/AndroidManifest.xml
 
 ### How to Install APK
-- 1: Enable developer mode on your Android device if you have not done so already.
-- 2: Enable "Install Unknown Apps" on your device.
-- 3: Connect your device to your pc and transfer it to your downloads directory on your device.
-- 4: Locate and file on your device and install it.
+- 1: Download the recipe-app-demo.apk file located at /app/recipe-app-demo.apk and store locally on your machine.
+- 2: Enable developer mode on your Android device if you have not done so already.
+- 3: Enable "Install Unknown Apps" on your device.
+- 4: Connect your device to your pc and transfer it to your downloads directory on your device.
+- 5: Locate and file on your device and install it.
 
 ### How to Work with Project
 To work with this project, you will need to create your own Firebase project using the Firebase console. You will need to create your own Authentication service, Firebase database, and Firebase storage. 
