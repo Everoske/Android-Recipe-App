@@ -40,3 +40,8 @@ The application can still be downloaded and used and the code is free to clone s
 To work with this project, you will need to create your own Firebase project using the Firebase console. You will need to create your own Authentication service, Firebase database, and Firebase storage. 
 You will need to configure credentials for working with the SDK and install the appropriate google-services.json file. 
 
+### Features Not Implemented
+- Users can subscribe to other users and get alerts when those users create new recipes.
+- Users can like recipes.
+- Users can comment on recipes.
+- Users can search for recipes.
