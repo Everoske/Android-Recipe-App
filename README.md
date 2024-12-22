@@ -16,18 +16,18 @@ The application can still be downloaded and used and the code is free to clone s
 - User profiles contain a list of the recipes they have created not marked as private.
 
 ### Project Structure
-- Downloadable APK: /app/recipe-app-demo.apk
-- Main Project Contents: /app/src/main
-- Java Files: /app/src/main/java/com/everon/recipeapp/
-- Activity Controller Files: /app/src/main/java/com/everon/recipeapp/
-- Recycler View Adapter Files: /app/src/main/java/com/everon/recipeapp/adapters/
-- Data Modeling Files: /app/src/main/java/com/everon/recipeapp/data/
-- Navigation Bar Files: /app/src/main/java/com/everon/recipeapp/nav/
-- Activity Layout XML Files: /app/src/main/res/layout/
-- String, style, color, and theme values: app/src/main/res/values/
-- Images Used in Project: app/src/main/res/drawable
-- Navigation Resource File: app/src/main/res/menu/navigation_items.xml
-- Android Manifest File: app/src/main/AndroidManifest.xml
+- **Downloadable APK:** /app/recipe-app-demo.apk
+- **Main Project Contents:** /app/src/main
+- **Java Files:** /app/src/main/java/com/everon/recipeapp/
+- **Activity Controller Files:** /app/src/main/java/com/everon/recipeapp/
+- **Recycler View Adapter Files:** /app/src/main/java/com/everon/recipeapp/adapters/
+- **Data Modeling Files:** /app/src/main/java/com/everon/recipeapp/data/
+- **Navigation Bar Files:** /app/src/main/java/com/everon/recipeapp/nav/
+- **Activity Layout XML Files:** /app/src/main/res/layout/
+- **String, style, color, and theme values:** app/src/main/res/values/
+- **Images Used in Project:** app/src/main/res/drawable
+- **Navigation Resource File:** app/src/main/res/menu/navigation_items.xml
+- **Android Manifest File:** app/src/main/AndroidManifest.xml
 
 ### How to Install APK
 - 1: Download the recipe-app-demo.apk file located at /app/recipe-app-demo.apk and store locally on your machine.
