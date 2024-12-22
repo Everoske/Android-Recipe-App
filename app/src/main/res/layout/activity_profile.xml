@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profileConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileAvatarImageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/chef_login_icon"
+            android:layout_margin="4dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/loginGradientEndColor"/>
+
+        <TextView
+            android:id="@+id/profileNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/profileAvatarImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/creatorNamePlaceholderText"
+            android:textSize="22sp"
+            />
+
+        <TextView
+            android:id="@+id/profileRecipeCountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/profileNameTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            android:text="@string/recipeCountPlaceholder"
+            android:textSize="18sp"
+            android:textColor="@color/loginGradientEndColor"/>
+
+        <TextView
+            android:id="@+id/profileFollowerCountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/profileRecipeCountTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            android:text="@string/followerCountPlaceholder"
+            android:textSize="18sp"
+            android:textColor="@color/loginGradientEndColor"/>
+
+        <Button
+            android:id="@+id/profileEditProfileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="120dp"
+            app:layout_constraintTop_toBottomOf="@+id/profileFollowerCountTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/transparent_button"
+            android:text="@string/editProfileText"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/loginGradientEndColor"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/profileLogoutFollowButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="120dp"
+            app:layout_constraintTop_toBottomOf="@+id/profileFollowerCountTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/solid_rounded_button"
+            android:text="@string/logoutPlaceholderText"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"/>
+
+        <View
+            android:id="@+id/profileDivider"
+            style="@style/Divider"
+            app:layout_constraintTop_toBottomOf="@id/profileLogoutFollowButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/profileRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/profileConstraintLayout"
+        android:layout_above="@id/profileActivityNavBar"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/profileActivityNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/loginGradientEndColor"
+        app:itemIconTint="@color/white"
+        android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/navigation_items"/>
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/recipeRowAvatarImageView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/chef_login_icon"
+        android:layout_margin="8dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/loginGradientEndColor"/>
+
+    <TextView
+        android:id="@+id/recipeRowUsernameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/recipeRowAvatarImageView"
+        app:layout_constraintStart_toEndOf="@id/recipeRowAvatarImageView"
+        app:layout_constraintBottom_toBottomOf="@id/recipeRowAvatarImageView"
+        android:text="@string/creatorNamePlaceholderText"
+        android:textSize="18sp"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/loginGradientEndColor"/>
+    
+    <ImageView
+        android:id="@+id/recipeRowImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toBottomOf="@id/recipeRowAvatarImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/default_recipe_image"
+        android:contentDescription="@string/recipeImageDescription"/>
+    
+    <TextView
+        android:id="@+id/recipeRowNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/recipeRowImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp"
+        android:text="@string/recipeNamePlaceholderText"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:background="@color/loginGradientEndColorTransparent"/>
+
+    <View
+        android:id="@+id/recipeRowDivider"
+        style="@style/Divider"
+        app:layout_constraintTop_toBottomOf="@id/recipeRowImageView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
